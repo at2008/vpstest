@@ -17,7 +17,7 @@ def GetIpipInfo(para):
 def GetGeoioInfo(para):
     ip_api = urllib.request.urlopen(r'http://ip-api.com/json')
     ijson = json.loads(ip_api.read())
-    print(ijson)
+    print(ijson[para])
     
 def GetDiskInfo(para):
     temp = ExecShell("df -h -P|grep '/'|grep -v tmpfs")[0];
