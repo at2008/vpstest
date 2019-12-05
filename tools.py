@@ -5,8 +5,9 @@ import time,urllib.request,json,sys
 import shlex
 import datetime
 import subprocess
+import importlib,sys 
 
-reload(sys)
+importlib.reload(sys)
 sys.setdefaultencoding('utf-8')
 
 def GetIpipInfo(para):
