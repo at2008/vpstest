@@ -7,9 +7,6 @@ import datetime
 import subprocess
 import importlib,sys 
 
-importlib.reload(sys)
-sys.setdefaultencoding('utf-8')
-
 def GetIpipInfo(para):
     f = open("ip_json.json",'r')
     ijson = json.load(f)
